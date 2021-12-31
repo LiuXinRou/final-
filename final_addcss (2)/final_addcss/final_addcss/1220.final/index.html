@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css">
+    <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <style>
+        @import url("./assets/css/final.css");
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="h" href="#"><img src="./assets/img/IMG_0714.JPG" height="50px" width="50px"></a>
+        
+            <a class="h" href="#">新建案</a>
+            <a class="h" href="#">租屋</a>
+            <a class="h" href="#">中古屋</a>
+            <a class="h" href="#">店面</a>
+            <a class="h" href="#">辦公</a>
+            <a class="h" href="#">廠房土地</a>
+            <a class="h" href="#">8</a>
+            <a class="h" href="#"><img src="./assets/img/IMG_0714.JPG" height="50px" width="50px"></a>
+        </nav>
+        <script>
+            $(window).scroll(function()
+            {            //當視窗滾動時
+                if ( $(this).scrollTop() > 100) 
+                {     //如果視窗向下滾動100px
+                    $('#header').addClass('scroll');  //header 加上我們剛剛寫好的scroll css
+                } 
+                else 
+                {
+                    $('#nheader').removeClass('scroll'); //如果沒有的話就刪除 scroll css
+                }
+            });
+    
+    
+        </script>
+    </header>
+    <div class="container"></div>
+        <div class="rows">
+            <div class="col-md-12"> 搜尋條
+                
+            </div>
+                
+        </div>           
+    <div class="container2">
+        <div class="rows">
+
+            <div class="col-sm-5">
+            <img src="./assets/img/map.png">
+            
+            </div>
+            
+            <!--logo.ani
+                <div class="story">
+                    <img class="turn" src="./img/IMG_0714.JPG" width="50px" height="50px">
+                    <br><br>
+                    <div class="Box">
+                        introduce
+                    </div>
+                </div>
+            logo.ani-->
+            
+            <div class="col-sm-2">
+                桃園區
+                <div id="cover" class="coverflow">
+                    <a href='#'><img class="c" width="200px" height="250px" src="./assets/img/IMG_0714.JPG"></a>
+                    <a href='#'><img class="c" width="200px" src="./assets/img/map.png"></a>
+                    <a href='#'><img class="c" width="200px" src="./assets/img/TY.house.jpg"></a>
+                </div>
+                
+                <a href="rank.html" class="button"><p><input  type="button" onclick="" style="border:2px double" value="了解更多" ></a>
+            </div>
+            <div class="col-sm-2">
+                中壢區
+                <div id="cover" class="coverflow">
+                    <a href='#'><img class="c" width="200px" height="250px" src="./assets/img/IMG_0714.JPG"></a>
+                    <a href='#'><img class="c" width="200px" src="./assets/img/map.png"></a>
+                    <a href='#'><img class="c" width="200px" src="./assets/img/TY.house.jpg"></a>
+                </div>
+                <a href="rank.html" class="button"><p><input  type="button" onclick="" style="border:2px double" value="了解更多" ></a>
+            </div>
+            <div class="col-sm-2">
+                蘆竹區
+                <div id="cover" class="coverflow">
+                    <a href='#'><img class="c" width="200px" height="250px" src="./assets/img/IMG_0714.JPG"></a>
+                    <a href='#'><img class="c" width="200px" src="./assets/img/map.png"></a>
+                    <a href='#'><img class="c" width="200px" src="./assets/img/TY.house.jpg"></a>
+                </div>
+                <a href="rank.html" class="button"><p><input  type="button" onclick=""  style="border:2px double"value="了解更多"></a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        if you need more imformation 
+        please contact us
+    </footer>
+</body>
+</html>
+
